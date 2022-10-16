@@ -22,7 +22,7 @@ func callers() []uintptr {
 	return pcs[:l]
 }
 
-// Error a error with caller stack information
+// Error an error with caller stack information
 type Error interface {
 	error
 }

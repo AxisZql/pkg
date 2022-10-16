@@ -1,4 +1,4 @@
-module github.com/AxisZql/pkg/logger
+module github.com/AxisZql/pkg/xlog
 
 go 1.18
 
