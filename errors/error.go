@@ -54,8 +54,8 @@ func Errorf(format string, args ...interface{}) Error {
 	return &item{msg: fmt.Sprintf(format, args...), stack: callers()}
 }
 
-// Warp with some extra message into err
-func Warp(err error, msg string) Error {
+// Wrap with some extra message into err
+func Wrap(err error, msg string) Error {
 	if err == nil {
 		return nil
 	}
@@ -67,7 +67,7 @@ func Warp(err error, msg string) Error {
 	return e
 }
 
-func Warpf(err error, format string, args ...interface{}) Error {
+func Wrapf(err error, format string, args ...interface{}) Error {
 	if err == nil {
 		return nil
 	}
